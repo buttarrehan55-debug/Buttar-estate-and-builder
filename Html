@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buttar Estate & Builder</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #000, #333);
+      color: #f9d342;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #f9d342;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #000;
+      margin-bottom: 20px;
+      border-left: 5px solid #f9d342;
+      padding-left: 10px;
+    }
+
+    .services, .properties {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      background-color: #f9d342;
+      color: #000;
+      padding: 12px;
+      border: none;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact button:hover {
+      background-color: #000;
+      color: #f9d342;
+    }
+
+    footer {
+      background: #111;
+      color: #f9d342;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h1>Buttar Estate & Builder</h1>
+    <p>Welcome to Buttar Estate & Builder — Your Trusted Real Estate Partner in DHA Lahore</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#properties">Properties</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Buttar Estate & Builder</strong>, we specialize in property buying, selling, renting, and construction services in Lahore, particularly in DHA Commercial Broadway. 
+      With years of experience, our mission is to help you find the best property investments and dream homes with trust and transparency.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250?text=Buying" alt="Buying Property">
+        <h3>Buying Property</h3>
+        <p>Find your dream property with our expert buying assistance in prime DHA Lahore locations.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250?text=Selling" alt="Selling Property">
+        <h3>Selling Property</h3>
+        <p>We help you sell your property fast at the best market price with trusted buyers.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250?text=Renting" alt="Renting Property">
+        <h3>Renting</h3>
+        <p>Find quality tenants or rental properties easily through our verified listings.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250?text=Construction" alt="Construction Services">
+        <h3>Construction</h3>
+        <p>We build modern, luxury homes and commercial projects that meet your standards and vision.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="properties">
+    <h2>Featured Properties</h2>
+    <div class="properties">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250?text=Luxury+House+DHA" alt="Luxury Home">
+        <h3>DHA Lahore House</h3>
+        <p>5 Marla Luxury House for Sale in DHA Lahore — Prime location and elegant design.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250?text=Commercial+Plot" alt="Commercial Plot">
+        <h3>Commercial Plot</h3>
+        <p>2 Kanal Commercial Plot available in DHA Broadway — perfect for investment or construction.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Get in touch today for property consultation or visit our office.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <br>
+    <iframe
+      src="https://www.google.com/maps?q=DHA%20Commercial%20Broadway%2C%20Lahore%2C%20Pakistan&output=embed"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>📍 D.H.A. Commercial Broadway, Lahore, 54000 | 📞 0321-4110129 | ✉️ info@redbookestate.com</p>
+    <p>© 2025 Buttar Estate & Builder. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
